@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
     },
     title: {
-        fontSize: 'normal',
+        fontSize: 14,
         fontWeight: '500',
     },
     btnIcon :{
@@ -31,10 +31,16 @@ const styles = StyleSheet.create({
     icon : {
         padding: 20
     },
+    iconOutline: {
+        marginLeft: 35,
+        marginRight: 5
+    },
     titleIcon :{
-        marginLeft: 10
+        marginLeft: 10,
+        fontSize: 14,
+        fontWeight: '500',
     }
-    // 
+    
 
 });
 

@@ -7,10 +7,10 @@ const IconButton = (props) => {
     const { type, content, onPress, iconName, iconType } = props;
 
     const bgColor = type === 'primary' ? '#2E8B5F' : '#FFFFFF';
-    const textColor = type === 'primary' ? '#FFFFFF' : '#00000';
+    const textColor = type === 'primary' ? '#FFFFFF' : '#000000';
     const border = type === 'primary' ? '' : '#7C7C7C';
-    const borderW = type === 'primary' ? '' : 1;
-    const iconColor = type === 'primary' ? '#FFFFFF' : '#00000';
+    const borderW = type === 'primary' ? 0 : 1;
+    const iconColor = type === 'primary' ? '#FFFFFF' : '#000000';
     const iconParam = type === 'primary' ? styles.icon : styles.iconOutline;
 
     return (

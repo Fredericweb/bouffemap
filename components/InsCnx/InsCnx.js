@@ -23,7 +23,7 @@ const InsCnx = () => {
       </View>
       <View style={styles.btn}>
         <IconButton
-          content='inscriptez-vous avec votre mail'
+          content='Inscriptez-vous avec votre mail'
           type='primary'
           iconType='MaterialIcons'
           iconName='mail-outline'

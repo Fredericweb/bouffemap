@@ -5,29 +5,28 @@ const styles = StyleSheet.create({
       width: width,
       height: height,
       alignItems: 'center',
-      // justifyContent: 'center',
    },
    header: {
       overflow: 'hidden',
       alignItems: 'center',
       justifyContent : 'center',
-      marginTop : 50,
+      marginTop : height/16.24,
    },
    logo: {
       width: 109,
       height: 28,
       justifyContent: 'center',
-      marginBottom: 40
+      marginBottom: height/20.3
    },
    title : {
-      fontSize: 24,
-      fontWeight: 700,
+      fontSize: width/15.625,
+      fontWeight: '700',
       textAlign: 'center',
-      marginBottom: 40
+      marginBottom: height/20.3
       
    },
    btn: {
-      marginBottom: 100,
+      marginBottom: height/8.12,
       width: width
 
    },
@@ -40,43 +39,43 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       width: width,
       paddingHorizontal: 20,
-      marginBottom: 40
-
+      marginBottom: height/20.3
    },
    ligne: {
       backgroundColor:'#7C7C7C',
-      width: 55,
+      width: width/6.820,
       height: 1,
       opacity: 0.3
    },
    subText : {
       color: '#7C7C7C',
-      fontSize: 14,
-      fontWeight: 500,
+      fontSize: width/26.78,
+      fontWeight: '500',
    },
    socialCnx : {
       width: width,
-      marginBottom: 100,
+      // marginBottom: height/8.12,
 
    },
    socialBtn: {
-      marginBottom: 30
+      marginBottom: height/27
    },
    footer: {
       width: width,
       alignItems: 'center',
       justifyContent: 'center',
       flexDirection: 'row',
+      bottom: -20
    },
    cnxLink : {
       color : '#2E8B5F',
-      marginLeft: 2,
-      fontSize: 13,
-      fontWeight: 400,
+      marginLeft: width/187.5,
+      fontSize: width/29,
+      fontWeight: '400',
    },
    bottomText:{
-      fontSize: 13,
-      fontWeight: 400,
+      fontSize: width/29,
+      fontWeight: '400',
    }
 
 });

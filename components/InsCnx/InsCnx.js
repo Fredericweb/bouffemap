@@ -37,6 +37,7 @@ const InsCnx = () => {
         <View style={styles.ligne}></View>
       </View>
       <View style={styles.socialCnx}>
+
         <View style={styles.socialBtn}>
           <IconButton
             content='inscriptez-vous avec votre Google'
@@ -44,6 +45,7 @@ const InsCnx = () => {
             iconName='google--with-circle'
           />
         </View>
+
         <View style={styles.socialBtn}>
           <IconButton
             content='inscriptez-vous avec votre Facebook'
@@ -59,20 +61,21 @@ const InsCnx = () => {
             iconName='facebook-with-circle'
           />
         </View>
-
-        <View style={styles.footer}>
-          <Text style={styles.bottomText}>
-            Avez-vous déja un compte ?
-            <Pressable style={styles.cnxBtn}>
-              <Text style={styles.cnxLink}>
-                Se connecter
-              </Text>
-            </Pressable>
+      </View>
+      <View style={styles.footer}>
+        <Text style={styles.bottomText}>
+          Avez-vous déjà un compte ?
+        </Text>
+        <Pressable style={styles.cnxBtn}>
+          <Text style={styles.cnxLink}>
+            Se connecter
           </Text>
-        </View>
-
+        </Pressable>
 
       </View>
+
+
+
     </View>
   );
 };

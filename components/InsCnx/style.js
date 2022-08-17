@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
       
    },
    btn: {
-      marginBottom: 90,
+      marginBottom: 100,
       width: width
 
    },
@@ -39,7 +39,9 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'space-between',
       width: width,
-      paddingHorizontal: 20
+      paddingHorizontal: 20,
+      marginBottom: 40
+
    },
    ligne: {
       backgroundColor:'#7C7C7C',
@@ -51,10 +53,11 @@ const styles = StyleSheet.create({
       color: '#7C7C7C',
       fontSize: 14,
       fontWeight: 500,
-      marginBottom: 40
    },
    socialCnx : {
       width: width,
+      marginBottom: 100,
+
    },
    socialBtn: {
       marginBottom: 30
@@ -62,7 +65,18 @@ const styles = StyleSheet.create({
    footer: {
       width: width,
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      flexDirection: 'row',
+   },
+   cnxLink : {
+      color : '#2E8B5F',
+      marginLeft: 2,
+      fontSize: 13,
+      fontWeight: 400,
+   },
+   bottomText:{
+      fontSize: 13,
+      fontWeight: 400,
    }
 
 });

@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View} from 'react-native';
-import InsCnx from './components/InsCnx/InsCnx';
+import FormIns from './components/FormIns/FormIns';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <InsCnx />
+      <FormIns />
       <StatusBar style="auto" />
     </View>
   );

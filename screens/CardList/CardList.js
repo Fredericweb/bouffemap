@@ -31,6 +31,9 @@ const CardList = ({navigation}) => {
     const nextScreen = () => {
         currentIndex >= 2 ? (navigation.navigate('insCnx')):(next())
     }
+    const skip = () => {
+        navigation.navigate('Form')
+    }
     return (
         <SafeAreaView style={styles.container}>
             <Animated.FlatList
@@ -57,7 +60,7 @@ const CardList = ({navigation}) => {
                     currentIndex < 2 ?'Suivant':'Commencer'}/>
                 {
                     currentIndex < 2 ? (
-                        <FwButton type="secondary" content={'Skip'} />
+                        <FwButton type="secondary" content={'Skip'} onPress={skip}/>
                     ) : <Text></Text>
                 }
 

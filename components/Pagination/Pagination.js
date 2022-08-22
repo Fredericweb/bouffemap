@@ -16,7 +16,7 @@ const Pagination = ({count, scrollX}) => {
                 extrapolate: "clamp"
             })
 
-            return (<Animated.View style={[styles.dot]} opacity={dotOpacity} key={index} >
+            return (<Animated.View style={styles.dot} opacity={dotOpacity} key={index} >
             </Animated.View>)
            } )}
         </View>

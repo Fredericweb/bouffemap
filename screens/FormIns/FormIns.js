@@ -3,14 +3,14 @@ import { View, Text, Image, Pressable, TextInput } from 'react-native';
 // import CheckBox from 'expo-checkbox';
 // import { CheckBox } from "@rneui/themed";
 import styles from './style';
-import FwButton from '../FwButton/FwButton';
+import FwButton from '../../components/FwButton/FwButton';
 import { AntDesign, Octicons } from '@expo/vector-icons';
 import { useForm, Controller } from "react-hook-form";
 
 const FormIns = () => {
     const title = 'Rejoignez nous &';
     const titleBr = 'profiter des offres';
-    const { register, setValue, handleSubmit, control, reset, formState: { errors } } = useForm({
+    const { register, setValue, handleSubmit, control, formState: { errors } } = useForm({
         defaultValues: {
             name: '',
             mail: '',

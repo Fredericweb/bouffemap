@@ -1,12 +1,12 @@
 import React from 'react';
 import { useRef, useState } from 'react';
-import { View, Text, FlatList, Dimensions } from 'react-native';
+import { View, Text, FlatList, Dimensions, SafeAreaView } from 'react-native';
 import styles from './style';
 import data from './data';
 import Card from '../Card/Card';
 import { Animated } from 'react-native';
-import Pagination from '../Pagination/Pagination';
-import FwButton from '../FwButton/FwButton';
+import Pagination from '../../components/Pagination/Pagination';
+import FwButton from '../../components/FwButton/FwButton';
 
 
 const CardList = () => {
@@ -29,7 +29,7 @@ const CardList = () => {
         }
     }
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Animated.FlatList
                 data={data}
                 renderItem={({ item }) => <Card data={item} />}
@@ -59,7 +59,7 @@ const CardList = () => {
                 }
 
             </View>
-        </View>
+        </SafeAreaView>
     );
 }
 

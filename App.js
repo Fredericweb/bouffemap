@@ -1,13 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View} from 'react-native';
-import FormIns from './components/FormIns/FormIns';
+import { StyleSheet, Text, View, SafeAreaView} from 'react-native';
+import FormIns from './screens/FormIns/FormIns';
+import CardList from './screens/CardList/CardList';
+import InsCnx from './screens/InsCnx/InsCnx';
+import Loading from './screens/Loading/Loading';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <FormIns />
+    <SafeAreaView style={styles.container}>
+      {/* <CardList /> */}
+      {/* <InsCnx /> */}
+      {/* <FormIns /> */}
+      <Loading />
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 

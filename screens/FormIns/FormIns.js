@@ -7,7 +7,8 @@ import FwButton from '../../components/FwButton/FwButton';
 import { AntDesign, Octicons } from '@expo/vector-icons';
 import { useForm, Controller } from "react-hook-form";
 
-const FormIns = () => {
+
+const FormIns = ({ navigation }) => {
     const title = 'Rejoignez nous &';
     const titleBr = 'profiter des offres';
     const { register, setValue, handleSubmit, control, formState: { errors } } = useForm({
@@ -31,17 +32,22 @@ const FormIns = () => {
         icon === 'eye' ? (setPass(false), setIcon('eye-closed')) : (setPass(true), setIcon('eye'))
     }
 
+    const nextScreen = () => {
+        navigation.navigate('insCnx')
+    }
+
     return (
         <View style={styles.container}>
 
             <View style={styles.header}>
-                <Pressable style={styles.backBtn}>
+                <Pressable style={styles.backBtn} onPress={nextScreen}>
                     <AntDesign
                         style={styles.backIcon}
                         name="arrowleft"
                         size={24}
                         color="#7C7C7C"
                     />
+
                 </Pressable>
 
                 <Image

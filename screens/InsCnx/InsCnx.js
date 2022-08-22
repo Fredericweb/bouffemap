@@ -3,9 +3,12 @@ import { View, Text, Image, Pressable } from 'react-native';
 import styles from './style';
 import IconButton from '../../components/FwButton/IconButton';
 
-const InsCnx = () => {
+const InsCnx = ({navigation}) => {
   const title = 'Rejoignez nous'
   const titleBr = '& profiter des offres'
+  const nextScreen = () => {
+    navigation.navigate('Form')
+  }
   return (
     <View style={styles.container}>
 
@@ -27,6 +30,7 @@ const InsCnx = () => {
           type='primary'
           iconType='MaterialIcons'
           iconName='mail-outline'
+          onPress={nextScreen}
         />
       </View>
 

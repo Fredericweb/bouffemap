@@ -5,7 +5,7 @@ import styles from './style';
 const FwButton = (props) => {
   const { type, content, onPress } = props;
 
-  const bgColor = type === 'primary' ? '#2E8B5F' : '#FFFFFF';
+  const bgColor = type === 'primary' ? '#2E8B5F' : '';
 
   const textColor = type === 'primary' ? '#FFFFFF' : '#7C7C7C';
   

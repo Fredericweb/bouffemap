@@ -9,7 +9,7 @@ import Pagination from '../../components/Pagination/Pagination';
 import FwButton from '../../components/FwButton/FwButton';
 
 
-const CardList = () => {
+const CardList = ({navigation}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const scrollX = useRef(new Animated.Value(0)).current;
     const width = Dimensions.get('window').width
@@ -27,6 +27,9 @@ const CardList = () => {
             ref?.current.scrollToOffset({ offset });
             setCurrentIndex(currentIndex + 1);
         }
+    }
+    const nextScreen = () => {
+        currentIndex >= 2 ? (navigation.navigate('insCnx')):(next())
     }
     return (
         <SafeAreaView style={styles.container}>
@@ -49,7 +52,7 @@ const CardList = () => {
 
             <Pagination count={data} scrollX={scrollX} />
             <View style={styles.btnContainer}>
-                <FwButton type="primary" onPress={next} 
+                <FwButton type="primary" onPress={nextScreen} 
                 content={
                     currentIndex < 2 ?'Suivant':'Commencer'}/>
                 {

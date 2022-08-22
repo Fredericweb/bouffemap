@@ -6,7 +6,7 @@ import styles from './style';
 const IconButton = (props) => {
     const { type, content, onPress, iconName, iconType } = props;
 
-    const bgColor = type === 'primary' ? '#2E8B5F' : '#FFFFFF';
+    const bgColor = type === 'primary' ? '#2E8B5F' : '';
     const textColor = type === 'primary' ? '#FFFFFF' : '#000000';
     const border = type === 'primary' ? '' : '#7C7C7C';
     const borderW = type === 'primary' ? 0 : 1;

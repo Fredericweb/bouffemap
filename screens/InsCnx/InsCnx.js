@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, Image, Pressable } from 'react-native';
 import styles from './style';
 import IconButton from '../../components/FwButton/IconButton';
+import Header from '../../components/Header/Header';
 
 const InsCnx = ({navigation}) => {
   const title = 'Rejoignez nous'
@@ -12,12 +13,7 @@ const InsCnx = ({navigation}) => {
   return (
     <View style={styles.container}>
 
-      <View style={styles.header}>
-        <Image
-          source={require('../../assets/img/logo.png')}
-          style={styles.logo}
-        />
-      </View>
+      <Header iconName='none' />
 
       <View style={styles.contentTitle}>
         <Text style={styles.title} >

@@ -32,7 +32,7 @@ const CardList = ({navigation}) => {
         currentIndex >= 2 ? (navigation.navigate('insCnx')):(next())
     }
     const skip = () => {
-        navigation.navigate('Form')
+        navigation.navigate('insCnx')
     }
     return (
         <SafeAreaView style={styles.container}>

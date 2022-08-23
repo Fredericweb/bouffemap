@@ -1,8 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import FormIns from './screens/FormIns/FormIns';
-import CardList from './screens/onBoarding/CardList/CardList';
+import CardList from './screens/OnBoarding/CardList/CardList';
 import InsCnx from './screens/InsCnx/InsCnx';
+import FiltrageList from './screens/Filtrage/FiltrageList/FiltrageList'
+import FiltrageStart from './screens/Filtrage/FiltrageStart/FlitrageStart';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -15,12 +17,17 @@ export default function App() {
       <NavigationContainer>
         <StatusBar hidden={true} />
         <Stack.Navigator
-          initialRouteName='Slide'
+          initialRouteName='FiltrageStart'
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name='Slide' component={CardList} />
           <Stack.Screen name='insCnx' component={InsCnx} />
           <Stack.Screen name='Form' component={FormIns} />
+          <Stack.Screen name='Filtrage' component={FiltrageList} />
+          <Stack.Screen name='FiltrageStart' component={FiltrageStart} />
+
+          
+
         </Stack.Navigator>
       </NavigationContainer>
 

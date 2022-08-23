@@ -4,7 +4,8 @@ import { View, Text, Image, Pressable, TextInput } from 'react-native';
 // import { CheckBox } from "@rneui/themed";
 import styles from './style';
 import FwButton from '../../components/FwButton/FwButton';
-import { AntDesign, Octicons } from '@expo/vector-icons';
+import Header from '../../components/Header/Header';
+import { Octicons } from '@expo/vector-icons';
 import { useForm, Controller } from "react-hook-form";
 
 
@@ -39,23 +40,7 @@ const FormIns = ({ navigation }) => {
     return (
         <View style={styles.container}>
 
-            <View style={styles.header}>
-                <Pressable style={styles.backBtn} onPress={nextScreen}>
-                    <AntDesign
-                        style={styles.backIcon}
-                        name="arrowleft"
-                        size={24}
-                        color="#7C7C7C"
-                    />
-
-                </Pressable>
-
-                <Image
-                    source={require('../../assets/img/logo.png')}
-                    style={styles.logo}
-                />
-
-            </View>
+            <Header iconName='arrowleft' onPress={nextScreen} />
 
             <View style={styles.contentTitle}>
                 <Text style={styles.title} >

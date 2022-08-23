@@ -4,7 +4,7 @@ import { Text, View, Image } from 'react-native';
 import styles from './style';
 
 
-const Loading = () => {
+const SplashScreen = () => {
   
     return (
         <View style={styles.container}>
@@ -17,4 +17,4 @@ const Loading = () => {
     );
 };
 
-export default Loading;
+export default SplashScreen;

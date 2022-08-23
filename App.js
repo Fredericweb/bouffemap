@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import FormIns from './screens/FormIns/FormIns';
-import CardList from './screens/CardList/CardList';
+import CardList from './screens/onBoarding/CardList/CardList';
 import InsCnx from './screens/InsCnx/InsCnx';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';

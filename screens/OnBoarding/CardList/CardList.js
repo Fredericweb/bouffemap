@@ -5,8 +5,8 @@ import styles from './style';
 import data from './data';
 import Card from '../Card/Card';
 import { Animated } from 'react-native';
-import Pagination from '../../components/Pagination/Pagination';
-import FwButton from '../../components/FwButton/FwButton';
+import Pagination from '../../../components/Pagination/Pagination';
+import FwButton from '../../../components/FwButton/FwButton';
 
 
 const CardList = ({navigation}) => {

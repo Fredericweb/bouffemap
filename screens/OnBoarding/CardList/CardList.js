@@ -9,7 +9,7 @@ import Pagination from '../../../components/Pagination/Pagination';
 import FwButton from '../../../components/FwButton/FwButton';
 
 
-const CardList = ({navigation}) => {
+const CardList = ({ navigation }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const scrollX = useRef(new Animated.Value(0)).current;
     const width = Dimensions.get('window').width
@@ -29,18 +29,19 @@ const CardList = ({navigation}) => {
         }
     }
     const nextScreen = () => {
-        currentIndex >= 2 ? (navigation.navigate('insCnx')):(next())
+        currentIndex >= 2 ? (navigation.navigate('insCnx')) : (next())
     }
     const skip = () => {
         navigation.navigate('insCnx')
     }
     return (
         <SafeAreaView style={styles.container}>
-            <Animated.FlatList
+            <FlatList
                 data={data}
-                renderItem={({ item }) => <Card data={item} />}
+                renderItem={({ item, index }) => <Card data={item} key={index} />}
                 horizontal
                 pagingEnabled
+                scrollEnabled
                 onMomentumScrollEnd={updateCurrentSlideIndex}
                 snapToInterval={Dimensions.get('window').width}
                 decelerationRate={'fast'}
@@ -55,14 +56,10 @@ const CardList = ({navigation}) => {
 
             <Pagination count={data} scrollX={scrollX} />
             <View style={styles.btnContainer}>
-                <FwButton type="primary" onPress={nextScreen} 
-                content={
-                    currentIndex < 2 ?'Suivant':'Commencer'}/>
-                {
-                    currentIndex < 2 ? (
-                        <FwButton type="secondary" content={'Skip'} onPress={skip}/>
-                    ) : <Text></Text>
-                }
+                <FwButton type="primary" onPress={nextScreen}
+                    content={currentIndex < 2 ? 'Suivant' : 'Commencer'}
+                />
+
 
             </View>
         </SafeAreaView>

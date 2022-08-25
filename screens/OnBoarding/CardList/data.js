@@ -1,5 +1,6 @@
 export default [
 {
+    id:1,
     img1:require('../../../assets/img/test.png'),
     img2:require('../../../assets/img/test.png'),
     img3:require('../../../assets/img/test.png'),
@@ -11,6 +12,7 @@ export default [
     subtitle:'Lorem ipsum dolor sit amet, consectetur',
     subtitleBr: 'adipiscing elit, sed do eiusmod tempor',
 },{
+    id:2,
     img1:require('../../../assets/img/test.png'),
     img2:require('../../../assets/img/test.png'),
     img3:require('../../../assets/img/test.png'),
@@ -22,6 +24,7 @@ export default [
     subtitle:'Lorem ipsum dolor sit amet, consectetur',
     subtitleBr: 'adipiscing elit, sed do eiusmod tempor',
 },{
+    id:3,
     img1:require('../../../assets/img/test.png'),
     img2:require('../../../assets/img/test.png'),
     img3:require('../../../assets/img/test.png'),

@@ -26,12 +26,11 @@ const styles = StyleSheet.create({
      },
      card:{
         padding: 20,
-        paddingHorizontal: 40,
+        paddingHorizontal: width/9.375,
         backgroundColor:'#FFFAF0',
         borderRadius: 15,
         marginBottom: 12,
         alignItems:'center',
-      //   justifyContent:'center'
      },
      cardText: {
         textAlign: 'center',

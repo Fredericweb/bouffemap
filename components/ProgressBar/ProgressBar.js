@@ -16,11 +16,7 @@ const ProgressBar = ({ count, scrollX }) => {
                         outputRange: [0.3, 1, 1],
                         extrapolate: "clamp"
                     })
-                    const dotRadius = dotPosition.interpolate({
-                        inputRange,
-                        outputRange: [5, 0, 5],
-                        extrapolate: "clamp"
-                    })
+                    
 
                     return (<Animated.View style={[styles.dot]} opacity={dotOpacity}  key={index} ></Animated.View>)
                 })}

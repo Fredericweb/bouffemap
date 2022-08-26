@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRef, useState } from 'react';
-import { View, Text, FlatList, Dimensions, SafeAreaView } from 'react-native';
+import { View, Text, FlatList, Dimensions, SafeAreaView, Pressable } from 'react-native';
 import styles from './style';
 import data from './data';
 import FiltrageCard from '../FiltrageCard/FiltrageCard';
@@ -36,13 +36,16 @@ const FiltrageList = ({ navigation }) => {
     }
     return (
         <SafeAreaView style={styles.container}>
-            <View>
+            <View style= {styles.top}>
                 <ProgressBar count={data} scrollX={scrollX} style={styles.progressBar} />
-            {/* {
+            {
                 currentIndex < 2 ? (
-                    <FwButton type="secondary" content={'Skip'} onPress={skip} />
+                   <Pressable style={styles.skip}>
+                    <Text style={styles.skipText}>Skip</Text>
+                   </Pressable>
+                   
                 ) : <Text></Text>
-            } */}
+            }
             </View>
             
             <FlatList

@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
    bar: {
       width:227,
       borderRadius: 5,
-      marginTop: height / 16.24,
       flexDirection: 'row',
       overflow:'hidden',
    },

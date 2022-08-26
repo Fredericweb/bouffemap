@@ -5,10 +5,25 @@ const styles = StyleSheet.create({
   container: {
     width: width,
     height: height,
-    backgroundColor: '#ffffff'
+    backgroundColor: '#ffffff',
+    justifyContent:'center'
   },
-  progressBar: {
-    
+  top:{
+    // borderColor:'black',
+    height: 12,
+    // borderWidth:1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent:'center',
+    marginTop: height / 16.24,
+  },
+  skip:{
+    position:'absolute',
+    right: 20
+  },
+  skipText: {
+    color: '#7C7C7C',
+    textDecorationLine:'underline'
   }
 });
 

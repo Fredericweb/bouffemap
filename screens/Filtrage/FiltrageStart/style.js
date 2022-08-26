@@ -22,28 +22,24 @@ const styles = StyleSheet.create({
         marginBottom: height/20.3
      },
      cardContainer: {
-        marginBottom: 50
+        marginBottom: height/16.24
      },
      card:{
         padding: 20,
         paddingHorizontal: width/9.375,
         backgroundColor:'#FFFAF0',
         borderRadius: 15,
-        marginBottom: 12,
+        marginBottom: height/67.67,
         alignItems:'center',
      },
      cardText: {
         textAlign: 'center',
-        fontSize:14,
+        fontSize:width/26.785,
         fontWeight: '500',
      },
      icon: {
       marginBottom: 5
      },
-     btn: {
-      
-     }
-
 
 });
 

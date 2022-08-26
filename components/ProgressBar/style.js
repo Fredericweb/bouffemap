@@ -7,20 +7,19 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
    },
    bar: {
-      width:227,
+      width:width/1.66,
       borderRadius: 5,
       flexDirection: 'row',
       overflow:'hidden',
    },
    dot: {
-      width:230/3,
+      width:(width/1.6)/3,
       height: 5,
-      // borderRadius: 5,
       backgroundColor: '#2E8B5F',
       position:'relative'
    },
    background:{
-      width: 227,
+      width: width/1.66,
       height: 5,
       borderRadius: 5,
       backgroundColor: '#7C7C7C',

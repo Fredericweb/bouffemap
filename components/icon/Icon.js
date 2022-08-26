@@ -6,18 +6,30 @@ import { AntDesign, Ionicons, MaterialCommunityIcons, Feather } from '@expo/vect
 
 const Icon = (props) => {
     const { iconType, iconColor, iconName } = props
-    if (iconType == 'Feather') {
-        return (
-            <View>
-                <Feather
-                    name={iconName}
-                    size={24}
-                    color={iconColor}
-                />
-            </View>
+    return (
+        <View>
+            {
+                iconType == 'Feather' ? (
+                    <Feather
+                        name={iconName}
+                        size={24}
+                        color={iconColor}
+                    />
+                ) : ''
+               
+            }
+            {
+                 iconType == 'AntDesign' ? (
+                    <AntDesign name={iconName} size={24} color={iconColor} />
+        
+                    ):''
+            }
+           
+           
+            
+        </View>
+    )
 
-        )
-    }
 
 };
 

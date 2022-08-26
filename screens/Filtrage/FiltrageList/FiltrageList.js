@@ -32,22 +32,21 @@ const FiltrageList = ({ navigation }) => {
         currentIndex >= 2 ? (navigation.navigate('insCnx')) : (next())
     }
     const skip = () => {
-        navigation.navigate('insCnx')
+        // navigation.navigate('insCnx')
     }
     return (
         <SafeAreaView style={styles.container}>
-            <View style= {styles.top}>
+            <View style={styles.top}>
                 <ProgressBar count={data} scrollX={scrollX} style={styles.progressBar} />
-            {
-                currentIndex < 2 ? (
-                   <Pressable style={styles.skip}>
-                    <Text style={styles.skipText}>Skip</Text>
-                   </Pressable>
-                   
-                ) : <Text></Text>
-            }
+                {
+                    currentIndex < 2 ? (
+                        <Pressable style={styles.skip}>
+                            <Text style={styles.skipText}>Skip</Text>
+                        </Pressable>
+                    ) : <Text></Text>
+                }
             </View>
-            
+
             <FlatList
                 data={data}
                 renderItem={({ item }) => <FiltrageCard data={item} />}

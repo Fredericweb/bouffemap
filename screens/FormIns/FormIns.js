@@ -33,14 +33,17 @@ const FormIns = ({ navigation }) => {
         icon === 'eye' ? (setPass(false), setIcon('eye-closed')) : (setPass(true), setIcon('eye'))
     }
 
-    const nextScreen = () => {
+    const backScreen = () => {
         navigation.navigate('insCnx')
     }
 
+    const nextScreen = () => {
+        navigation.navigate('FiltrageStart')
+    }
     return (
         <View style={styles.container}>
 
-            <Header iconName='arrowleft' onPress={nextScreen} />
+            <Header iconName='arrowleft' onPress={backScreen} />
 
             <View style={styles.contentTitle}>
                 <Text style={styles.title} >
@@ -120,7 +123,7 @@ const FormIns = ({ navigation }) => {
 
 
             </View>
-            <FwButton style={styles.btn} content={'Suivant'} type='primary' onPress={handleSubmit(onSubmit)} />
+            <FwButton style={styles.btn} content={'Suivant'} type='primary' onPress={(handleSubmit(onSubmit),nextScreen)} />
         </View>
     );
 };

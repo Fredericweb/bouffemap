@@ -12,8 +12,6 @@ const styles = StyleSheet.create({
    btnContainer: {
       bottom: height/40.6,
       width: width,
-      // borderBottomColor: 'black',
-      // borderWidth : 2,
    }
 
 });

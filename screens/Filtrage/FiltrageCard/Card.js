@@ -6,13 +6,16 @@ import Icon from '../../../components/Icon/Icon'
 
 const Card = (props) => {
     const { iconType, iconName, text } = props.data
-
+    const count = props.count
+    let display
+    count > 5 ? (display = styles.cardRow) : (display = styles.card)
     return (
-
-        <View style={styles.card}>
-            {/* <Icon iconType={iconType} iconName={iconName} iconColor='black' /> */}
-            <Text style={styles.cardText}>{text}</Text>
-            <StatusBar style="auto" />
+        <View style={styles.cardContainer}>
+            <View style={display}>
+                <Icon iconType={iconType} iconName={iconName} iconColor='black' />
+                <Text style={styles.cardText}>{text}</Text>
+                <StatusBar style="auto" />
+            </View>
         </View>
     );
 };
@@ -21,10 +24,34 @@ const Card = (props) => {
 
 export default Card;
 const styles = StyleSheet.create({
-    card: {
+    cardContainer :{
         width:'100%',
         height:'100%',
-        alignItems:'center',
-        justifyContent:'center'
+        flex:1,
+    },
+    card: {
+        width:160,
+        height:100,
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderColor: '#7c7c7c',
+        borderWidth: 1,
+        margin:7,
+    },
+    cardRow:{
+        width:160,
+        height:50,
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderColor: '#7c7c7c',
+        borderWidth: 1,
+        margin:7,
+    },
+    cardText:{
+        fontSize: 14,
+        fontWeight: 700,
+        color: '#7c7c7c'
     }
 });

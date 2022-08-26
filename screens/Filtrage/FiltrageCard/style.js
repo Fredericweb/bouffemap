@@ -7,8 +7,8 @@ const styles = StyleSheet.create({
         height: height,
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        // alignItems: 'center',
+        // justifyContent: 'center',
       },
     
 
@@ -18,6 +18,12 @@ const styles = StyleSheet.create({
         width: width,
         height: '20%',
         padding: '4%',
+        marginBottom:height/54.14,
+    },
+    cardContain : {
+        width: width,
+        padding: '4%',
+
     },
     title: {
         fontSize: width/15.625,

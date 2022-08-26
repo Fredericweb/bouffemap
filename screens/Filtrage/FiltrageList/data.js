@@ -7,23 +7,23 @@ export default [
     subtitleBr: 'adipisicing elit. Magni, optio vitae.',
     dataCard: [
         {
-            iconType:'',
-            iconName:'',
+            iconType:'AntDesign',
+            iconName:'hearto',
             text: 'Vegetarien'
         },
         {
-            iconType:'',
-            iconName:'',
+            iconType:'Feather',
+            iconName:'feather',
             text:'Lorem ipsum'
         },
         {
-            iconType:'',
-            iconName:'',
+            iconType:'Feather',
+            iconName:'coffee',
             text:'Lorem ipsum'
         },
         {
-            iconType:'',
-            iconName:'',
+            iconType:'Entypo',
+            iconName:'emoji-sad',
             text:'Lorem ipsum'
         },
         {
@@ -92,13 +92,13 @@ export default [
     subtitleBr: 'adipisicing elit. Magni, optio vitae.',
     dataCard: [
         {
-            iconType:'',
-            iconName:'',
+            iconType:'AntDesign',
+            iconName:'hearto',
             text: `S'amuser`
         },
         {
-            iconType:'',
-            iconName:'',
+            iconType:'Feather',
+            iconName:'sun',
             text:'Lorem ipsum'
         },
         {
@@ -107,13 +107,13 @@ export default [
             text:'Faire des rencontres'
         },
         {
-            iconType:'',
-            iconName:'',
+            iconType:'AntDesign',
+            iconName:'staro',
             text:'Lorem ipsum'
         },
         {
-            iconType:'',
-            iconName:'',
+            iconType:'Feather',
+            iconName:'moon',
             text:'Lorem ipsum'
         },
 

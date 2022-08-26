@@ -67,8 +67,6 @@ const FiltrageList = ({ navigation }) => {
             <View style={styles.btnContainer}>
                 <FwButton type="primary" onPress={nextScreen}
                     content={currentIndex < 2 ? 'Suivant' : 'Fait'} />
-
-
             </View>
         </SafeAreaView>
     );

@@ -9,20 +9,20 @@ const Icon = (props) => {
     return (
         <View>
             {
-                iconType == 'Feather' ? (
+                iconType === 'Feather' ? (
                     <Feather
                         name={iconName}
                         size={24}
-                        color={iconColor}
+                        color='black'
                     />
-                ) : ''
+                ) : <Text></Text>
                
             }
             {
-                 iconType == 'AntDesign' ? (
-                    <AntDesign name={iconName} size={24} color={iconColor} />
+                 iconType === 'AntDesign' ? (
+                    <AntDesign name={iconName} size={24} color='black' />
         
-                    ):''
+                    ):<Text></Text>
             }
            
            

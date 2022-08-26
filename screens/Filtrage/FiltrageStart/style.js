@@ -12,20 +12,20 @@ const styles = StyleSheet.create({
         fontSize: width/15.625,
         fontWeight: '700',
         textAlign: 'center',
-        marginBottom: height/27.067
+        marginBottom: height/40.6
      },
      subTitle: {
        fontSize: width/23.43,
         fontWeight: '400',
         textAlign: 'center',
         color: '#7C7C7C',
-        marginBottom: height/20.3
+        marginBottom: height/40.6
      },
      cardContainer: {
-        marginBottom: height/16.24
+        marginBottom: height/20.3
      },
      card:{
-        padding: 20,
+        padding: height/40.6,
         paddingHorizontal: width/9.375,
         backgroundColor:'#FFFAF0',
         borderRadius: 15,
@@ -38,8 +38,12 @@ const styles = StyleSheet.create({
         fontWeight: '500',
      },
      icon: {
-      marginBottom: 5
+      marginBottom: height/162.4
      },
+     btn: {
+      width: '100%',
+      bottom:0
+     }
 
 });
 

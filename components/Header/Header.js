@@ -9,22 +9,14 @@ export default function App(props) {
     return (
         <View style={styles.header}>
 
-            {
-                iconName === 'none' ? '' : (
-                    <Pressable style={styles.backBtn} onPress={onPress}>
-                        <AntDesign
-                            style={styles.backIcon}
-                            name={iconName}
-                            size={24}
-                            color="#7C7C7C"
-                        />
-                    </Pressable>
-                )
-            }
-
-
-
-
+            <Pressable style={styles.backBtn} onPress={onPress}>
+                <AntDesign
+                    style={styles.backIcon}
+                    name={iconName}
+                    size={24}
+                    color="#7C7C7C"
+                />
+            </Pressable>
             <Image
                 source={require('../../assets/img/logo.png')}
                 style={styles.logo}
@@ -42,7 +34,7 @@ const styles = StyleSheet.create({
         width: width,
         marginTop: height / 16.24,
         flexDirection: 'row',
-        marginBottom: height / 20.3,
+        marginBottom: height / 40.6,
         paddingHorizontal: 20,
     },
     backBtn: {

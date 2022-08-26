@@ -59,8 +59,6 @@ const CardList = ({ navigation }) => {
                 <FwButton type="primary" onPress={nextScreen}
                     content={currentIndex < 2 ? 'Suivant' : 'Commencer'}
                 />
-
-
             </View>
         </SafeAreaView>
     );

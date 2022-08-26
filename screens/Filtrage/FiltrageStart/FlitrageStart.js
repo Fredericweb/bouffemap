@@ -6,7 +6,7 @@ import FwButton from '../../../components/FwButton/FwButton';
 import styles from './style';
 
 
-const FiltrageStart = ({navigation}) => {
+const FiltrageStart = ({ navigation }) => {
     const title = 'Presonnaliser les'
     const titleBr = 'paramètre de votre compte'
     const nextScreen = () => {
@@ -17,7 +17,7 @@ const FiltrageStart = ({navigation}) => {
     }
     return (
         <View style={styles.container}>
-            <Header iconName='left' onPress={backScreen}/>
+            <Header iconName='left' onPress={backScreen} />
             <View style={styles.contentTitle}>
                 <Text style={styles.title} >
                     {title + '\n' + titleBr}
@@ -60,7 +60,10 @@ const FiltrageStart = ({navigation}) => {
                     </Text>
                 </View>
             </View>
-            <FwButton content='Suivant' type='primary' onPress={nextScreen} />
+            <View style={styles.btn}>
+                <FwButton content='Suivant' type='primary' onPress={nextScreen} />
+            </View>
+            
         </View>
     );
 };

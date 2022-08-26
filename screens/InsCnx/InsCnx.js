@@ -13,10 +13,10 @@ const InsCnx = ({navigation}) => {
   return (
     <View style={styles.container}>
 
-      <Header iconName='none' />
+      <Header iconName='' />
 
       <View style={styles.contentTitle}>
-        <Text style={styles.title} >
+        <Text style={styles.title}>
           {title + '\n' + titleBr}
         </Text>
       </View>
@@ -73,8 +73,6 @@ const InsCnx = ({navigation}) => {
         </Pressable>
 
       </View>
-
-
 
     </View>
   );

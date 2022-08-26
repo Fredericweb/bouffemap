@@ -117,11 +117,6 @@ const FormIns = ({ navigation }) => {
                             'adipisicing elit. Nihil, aliquid magni?'}
                     </Text>
                 </View> */}
-                <View style={styles.btn}>
-
-                </View>
-
-
             </View>
             <FwButton style={styles.btn} content={'Suivant'} type='primary' onPress={(handleSubmit(onSubmit),nextScreen)} />
         </View>

@@ -18,7 +18,7 @@ export default function App() {
       <NavigationContainer>
         <StatusBar hidden={true} />
         <Stack.Navigator
-          initialRouteName='Slide'
+          initialRouteName='Filtrage'
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name='Slide' component={CardList} />

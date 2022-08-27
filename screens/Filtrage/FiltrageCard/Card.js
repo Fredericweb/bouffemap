@@ -19,7 +19,10 @@ const Card = (props) => {
                     </View>
                 ) : (
                     <View style={display}>
-                        <Icon iconType={iconType} iconName={iconName} iconColor='#7c7c7c' />
+                        <View style={styles.icon}>
+                            <Icon iconType={iconType} iconName={iconName} iconColor='#7c7c7c' />
+                        </View>
+
                         <Text style={styles.cardText}>{text}</Text>
                     </View>
                 )
@@ -63,5 +66,5 @@ const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: '700',
         color: '#7c7c7c'
-    }
+    },
 });
